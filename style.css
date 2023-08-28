@@ -71,12 +71,12 @@ nav ul li a:hover {
 }
 
 .clickbtn {
-    background-color: rgb(88, 10, 40);
     color: white;
-    padding: 5px;
-    border: 3px inset white;
+    padding: 11px;
+    border: 3px inset rgb(88, 10, 40);
     font-size: 1.1rem;
-    border-radius: 3px;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 11px;
     background-color: rgb(113, 11, 50);
 }
 
