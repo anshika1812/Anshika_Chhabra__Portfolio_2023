@@ -16,12 +16,17 @@
     <header>
         <nav>
             <div class="left"><b>Anshika here! :)</b></div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
             <div class="right">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="certificates.html">Certificates</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contactme.html">Contact Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contactme.html" class="active">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -47,5 +52,14 @@
             <section class="contactright"><a href="https://github.com/anshika1812" target="_blank">anshika1812</a></section>
         </section>
     </main>
+    <script>
+      function toggleMenu() {
+         const navLinks = document.querySelector('nav ul');
+         navLinks.classList.toggle('active');
+      }
+   </script>
+   <footer style="margin-top: 70px;">
+    ℹ️ This website was developed by Anshika Chhabra in 2023 and is still a work in progress.
+    </footer>
 </body>
 </html>
