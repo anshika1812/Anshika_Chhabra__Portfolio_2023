@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Anshika Chhabra-Portfolio_2023</title>
+   <link rel="stylesheet" href="style.css">
+   <link href="<link rel=" preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <header>
+      <nav>
+         <div class="left"><b>Anshika here! :)</b></div>
+         <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+         <div class="right">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="certificates.html">Certificates</a></li>
+               <li><a href="projects.html" class="active">Projects</a></li>
+               <li><a href="contactme.html">Contact Me</a></li>
+            </ul>
+         </div>
+      </nav>
+   </header>
+   <main>
+      <section class="projects-container">
+         <div class="project-card">
+            <a href="https://github.com/anshika1812/Employee_Management_Sys_PDbC" target="_blank">
+               <img src="Portfolio_images/EMS.jpg" alt="Employee Management Sys">
+            </a>
+            <h2>Employee Management System</h2>
+            <p>A mini project, that incorporates the use of Python Database Connectivity.</p>
+            <a href="https://github.com/anshika1812/Employee_Management_Sys_PDbC" target="_blank" class="project-link">View on GitHub</a>
+         </div>
+         <div class="project-card">
+            <a href="https://github.com/anshika1812/Library_Management_System" target="_blank">
+               <img src="Portfolio_images/LMS.webp" alt="Library Management Sys">
+            </a>
+            <h2>Library Management System</h2>
+            <p>A console-based Library Management System, which employs the use of Linked List & File Handling, coded completely in C Language.</p>
+            <a href="https://github.com/anshika1812/Library_Management_System" target="_blank" class="project-link">View on GitHub</a>
+         </div>
+         <div class="project-card">
+            <a href="https://github.com/anshika1812/Mouse_And_Cheese_MazeGame" target="_blank">
+               <img src="Portfolio_images/MazeGame.png" alt="Maze Game">
+            </a>
+            <h2>Mouse & Cheese Maze Game</h2>
+            <p>A typical mouse and cheese maze game, where you can control the mouse not only by using arrow keys, but also by using hand gestures!</p>
+            <a href="https://github.com/anshika1812/Mouse_And_Cheese_MazeGame" target="_blank" class="project-link">View on GitHub</a>
+         </div>
+         <div class="project-card">
+            <h2>Portfolio Website</h2>
+            <p>This very website, developed to showcase my certificates, projects, and contact details!</p>
+            <a href="https://github.com/anshika1812/Anshika_Chhabra__Portfolio_2023" target="_blank" class="project-link">View Source Code</a>
+         </div>
+      </section>
+   </main>
+   <script>
+      function toggleMenu() {
+         const navLinks = document.querySelector('nav ul');
+         navLinks.classList.toggle('active');
+      }
+   </script>
+   <footer style="margin-top: 70px;">
+    ℹ️ This website was developed by Anshika Chhabra in 2023 and is still a work in progress.
+   </footer>
+</body>
