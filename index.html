@@ -7,20 +7,26 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Anshika Chhabra-Portfolio_2023</title>
    <link rel="stylesheet" href="style.css">
-   <link href="link rel="preconnect" href="https://fonts.googleapis.com">
+   <link href=link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 
 <body>
    <header>
       <nav>
          <div class="left"><b>Anshika here! :)</b></div>
+         <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
          <div class="right">
             <ul>
-               <li><a href="index.html">Home</a></li>
+               <li><a href="index.html" class="active">Home</a></li>
                <li><a href="certificates.html">Certificates</a></li>
-               <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="projects.html">Projects</a></li>
                <li><a href="contactme.html">Contact Me</a></li>
             </ul>
          </div>
@@ -32,11 +38,11 @@
          <div class="leftone">Hey! My name is<br><span class="myname">Anshika Chhabra</span>.<br>
             <hr><br>
             <p class="desc">
-               An aspiring software & creative writer, I'm passionate about sketching, and ofcourse, about coding & web
+               An aspiring software engineer & creative writer, I'm passionate about sketching, and ofcourse, about coding & web
                development!
             </p><br>
             <p class="desc">
-               This is my very first website & through this, you can view my sketches, certificates & contact me as
+               This is my very first website & through this, you can view my projects, certificates & contact me as
                well!
             </p><br>
             <button class="clickbtn"><a href="https://github.com/anshika1812" target="_blank"><b>Visit My GitHub</b></a></button>
@@ -46,6 +52,15 @@
          </div>
       </section>
    </main>
+   <script>
+      function toggleMenu() {
+         const navLinks = document.querySelector('nav ul');
+         navLinks.classList.toggle('active');
+      }
+   </script>
+   <footer style="margin-top: 70px;">
+    ℹ️ This website was developed by Anshika Chhabra in 2023 and is still a work in progress.
+   </footer>
 </body>
 
 </html>
